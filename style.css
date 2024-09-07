@@ -1,7 +1,12 @@
+@font-face {
+    font-family: new-has;
+    src: url(./Assest/NeueHaasDisplayMediu.ttf);
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: new-has;
 }
 
 html,body{
@@ -10,10 +15,11 @@ html,body{
 }
 
 #page1{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
     position: relative;
+    padding: 0 2vw;
 }
 nav{
     height: 100px;
@@ -21,7 +27,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.2vw 2vw;
+    padding: 1.2vw 0;
 }
 
 .nav-btn{
@@ -68,3 +74,127 @@ bottom: 0;
 border-radius: 0;
 color: white;
 }
+
+#center{
+    height: 65vh;
+    width: 100%;
+    /* background-color: orangered; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 2vw;
+    border-bottom: 1px solid #000000;
+}
+#left h3{
+    width:25vw;
+    line-height: 2vw;
+    font-size: 1.8vw;
+}
+#right h1{
+ font-size: 10vw;
+ line-height: 8vw;
+ text-align: right;
+}
+
+#page1 video{
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 4vw;
+    position: relative;
+}
+
+#hero-shape{
+    position: absolute;
+    height: 36vw;
+    width: 46vw;
+    right: 0;
+    top: 65vh;
+    
+}
+
+#hero1{
+    background-color: #fe320a;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    width: 100%;
+    height: 100%;
+    filter: blur(20px);
+    position: absolute;
+}
+#hero2{
+    background: linear-gradient(#fe320a,#fe330abd);
+    border-radius: 50%;
+    width: 30vw;
+    height: 30vw;
+    filter: blur(20px);
+    position: absolute;
+    animation-name: animation2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+#hero3{
+   background: linear-gradient(#fe320a,#fe330abd);
+    border-radius: 50%;
+    width: 30vw;
+    height: 30vw;
+    filter: blur(20px);
+    position: absolute;
+    animation-name: animation1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation2 {
+    from{
+        transform: translate(55%,-3%);
+
+    }
+    to{
+        transform: translate(0%,10%);
+    }
+}
+
+@keyframes animation2 {
+    from{
+        transform: translate(5%,-5%);
+
+    }
+    to{
+        transform: translate(-20%,30%);
+    }
+}
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+#moving-text{
+    background-color: white;
+    white-space: nowrap;
+}
+
+#moving-text h1{
+    font-size: 5vw;
+    display: inline-block;
+   
+}
+
+#gola{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #fe320a;
+    display: inline-block;
+}
+
+.con{
+    background-color: aqua;
+   white-space: nowrap;
+}
+
