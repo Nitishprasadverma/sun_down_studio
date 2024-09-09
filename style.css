@@ -50,6 +50,10 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.2vw 0;
+    z-index: 100;
+}
+.btn-right{
+    display: none;
 }
 
 .nav-btn {
@@ -427,7 +431,7 @@ nav {
 }
 
 #page4-left{
-    width: 40%;
+    width: 40vw;
    margin-left: 4vw;
     height: 100vh;
     background-color: #000000;
@@ -471,7 +475,7 @@ nav {
 }
 
 #page4-right{
-    width: 60%;
+    width: 60vw;
     height: 100vh;
     /* background-color: purple; */
     margin-right: 4vw;
@@ -717,4 +721,96 @@ footer h1{
     100% {
         height: 50%;
     }
+}
+
+
+
+
+#full-scr{
+    height: 100vh;
+    width: 100%;
+    background-color: #00000042;
+    position: fixed;
+    z-index: 99;
+    top: -100%;
+    transition: all ease 0.5s;
+}
+
+
+#full-div1{
+    height: 50%;
+    width: 100%;
+    background-color: #efeae3;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/* Responsive */
+
+
+@media (max-width:600px) {
+    #page1 {
+        min-height: 100vh;
+        width: 100vw;
+        background-color: #EFEAE3;
+        position: relative;
+        padding: 0 5vw;
+    }
+    
+    nav {
+        /* height: 100px;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+       
+        justify-content: space-between; */
+        position: relative;
+        /* z-index: 100; */
+        padding: 8vw 0;
+        background-color: #efeae3;
+    }
+    nav img{
+       height: 8vh;
+       transition: all ease 0.2s;
+    }
+    .nav-btn {
+        /* display: flex;
+        align-items: center;
+        gap: 1.4vw; */
+        display: none;
+    }
+    
+
+    .btn-right{
+        /* display: block; */
+        display: block;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border: 1px solid #dadada;
+        border-radius: 50px;
+        padding: 5px 10px;
+        background-color: #ffffff3e;
+       z-index: 100;
+    
+
+    }
+    .btn-right h3{
+        font-size: 20px;
+        /* z-index: 100; */
+    }
+    .btn-right i{
+        height: 10px;
+    }
+    /* nav h3{
+        display: block;
+        padding: 3vw 5vw;
+        border: 1px solid #dadada;
+        border-radius: 50px;
+        font-size: 4vw;
+        font-weight: 200;
+        padding-left: 10vw;
+        z-index: 100;
+    } */
+    
+    
 }

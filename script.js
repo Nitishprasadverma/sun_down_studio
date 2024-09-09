@@ -13,7 +13,7 @@ elemc.addEventListener("mouseenter",function(){
 elemc.addEventListener("mouseleave",function(){
     fixed.style.display = "none"
 })
-
+ 
 var elems = document.querySelectorAll(".elem");
 elems.forEach(function(e){
 e.addEventListener("mouseenter",function(){
@@ -78,4 +78,26 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
+
+
+  var navanimation = document.querySelector(".btn-right")
+
+  var fullscr = document.querySelector("#full-scr")
+var navImg = document.querySelector(" nav img")
+console.log(navImg);
+var flag = 0
+  navanimation.addEventListener("click", function(){
+    if(flag == 0){
+        fullscr.style.top = 0
+
+        navImg.style.opacity = 0
+        flag = 1
+    }
+    else{
+        fullscr.style.top = "-100%"
+        navImg.style.opacity = 1
+        flag = 0
+    }
+  
+  })
 page4()
