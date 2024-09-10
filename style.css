@@ -50,9 +50,10 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.2vw 0;
-    z-index: 100;
+    /* position: relative;
+    z-index: 100; */
 }
-.btn-right{
+nav h3{
     display: none;
 }
 
@@ -726,7 +727,7 @@ footer h1{
 
 
 
-#full-scr{
+/* #full-scr{
     height: 100vh;
     width: 100%;
     background-color: #00000042;
@@ -734,83 +735,292 @@ footer h1{
     z-index: 99;
     top: -100%;
     transition: all ease 0.5s;
-}
+} */
 
 
-#full-div1{
+/* #full-div1{
     height: 50%;
     width: 100%;
     background-color: #efeae3;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+} */
+
+
+
+#full-scr{
+    height: 100vh;
+    width: 100%;
+    background-color: #00000070;
+    position: fixed;
+    z-index: 99;
+    top: -100%;
+   transition:  all ease .4s;
+
 }
 /* Responsive */
+
+
 
 
 @media (max-width:600px) {
     #page1 {
         min-height: 100vh;
         width: 100vw;
-        background-color: #EFEAE3;
-        position: relative;
+        /* background-color: #EFEAE3;
+        position: relative; */
         padding: 0 5vw;
     }
     
     nav {
-        /* height: 100px;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-       
-        justify-content: space-between; */
-        position: relative;
-        /* z-index: 100; */
-        padding: 8vw 0;
-        background-color: #efeae3;
+        height: 100px;
+        width: 100%;
+     
     }
+
     nav img{
-       height: 8vh;
-       transition: all ease 0.2s;
+        height: 12vw;
+       
     }
     .nav-btn {
-        /* display: flex;
-        align-items: center;
-        gap: 1.4vw; */
-        display: none;
+      display: none;
     }
-    
-
-    .btn-right{
-        /* display: block; */
-        display: block;
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        border: 1px solid #dadada;
-        border-radius: 50px;
-        padding: 5px 10px;
-        background-color: #ffffff3e;
-       z-index: 100;
-    
-
-    }
-    .btn-right h3{
-        font-size: 20px;
-        /* z-index: 100; */
-    }
-    .btn-right i{
-        height: 10px;
-    }
-    /* nav h3{
+     nav h3{
         display: block;
         padding: 3vw 5vw;
-        border: 1px solid #dadada;
-        border-radius: 50px;
-        font-size: 4vw;
+       border: 1px solid #bababa;
+       border-radius: 50px;
+       font-size: 4vw;
+       font-weight: 200;
+        
+     }
+
+
+
+
+     /* hero center section */
+ 
+     #center {
+        height: 62vh;
+        width: 100%;
+       
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+       
+        border-bottom: 1px solid #000000;
+        flex-direction: column-reverse;
+        position: relative;
+        z-index: 9;
+        padding: 7vw 5vw;
+        padding-bottom: 10vw;
+    }
+    
+    #left h3 {
+        width: 80%;
+        line-height: 7vw;
+        font-size: 5.8vw;
+    }
+    
+    #right h1 {
+        font-size: 16vw;
+        line-height: 14vw;
+        text-align: right;
+    }
+    
+    #page1 video {
+        width: 92%;
+        margin-top: 4vw;
+        height: 70vh;
+        object-fit: cover;
+        object-position: center;
+        margin-left: 4%;
+        border-radius: 15px;
+      
+        position: relative;
+    }
+    
+
+    /*  page 2 */
+    #page2-buttom {
+        height: 90vh;
+        width: 100vw;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 10vw 3vw;
+        position: relative;
+        z-index: 9;
+        flex-direction: column;
+    }
+    
+    #page2-buttom h1 {
+        font-size: 7.3vw;
+        width: 100%;
+        line-height: 8vw;
+        
+    }
+    
+    #buttom-part2 {
+        width: 90vw;
+        /* margin-top: 20vh; */
+    }
+    
+    #buttom-part2 img {
+        width: 100%;
+        border-radius: 10px;
+    
+    }
+    
+    #buttom-part2 p {
         font-weight: 200;
-        padding-left: 10vw;
-        z-index: 100;
-    } */
+        font-size: 4vw;
+        margin-top: 2vw;
+    
+    }
+    
+    #page2 #page2-animation {
+    
+        height: 60vw;
+        width: 60vw;
+        position: absolute;
+        border-radius: 50%;
+        background: linear-gradient(to top, #fe320a, #fe780a);
+        top: 15%;
+        left: 25%;
+        filter: blur(20px);
+        animation-name: page2-anime;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    }
+/* page 3 */
+
+#page3 {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #EFEAE3;
+    padding: 4vw 0;
+}
+
+.dot2 {
+    border-bottom: 1px solid #504A45;
+    display: flex;
+    align-items: center;
+    height: 7vw;
+    width: 100%;
+    position: relative;
+    font-size: 5vw;
+    padding-bottom: 20px;
+    
+}
+.dot{
+    margin-left: 4px;
+}
+
+/* page3 elements */
+
+
+
+
+.elem {
+    height: 100px;
+    width: 100vw;
+   
+}
+
+.elem h2 {
+    font-size: 5.7vw;
+
+}
+
+.project-details {
+    text-align: center;
+    gap: 5px;
+    font-size:3vw;
+  
+}
+
+.overlay {
+   
+    transition: all ease 0.5s;
+}
+
+.elem:hover .overlay {
+    top: 0;
+}
+
+
+#whole-img{
+    height: 70vw;
+    width: 50vw;
+    position: fixed;
+    z-index: 99;
+    left: 40%;
+    top: 40%;
     
     
+}
+#whole-img:hover{
+    display: none;
+}
+
+/* page 4 */
+#page4{
+    width: 100vw;
+   min-height: 50vh;
+    background-color: #EFEAE3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 1vh; */
+
+ 
+}
+
+#page4-left{
+    width: 100vw;
+  background-color:#000000;
+  margin-left: 0px;
+  height: 45vh;
+  border-top-left-radius: 0px;
+  z-index: 9;
+  border-bottom-left-radius: 0px;
+}
+
+.headings {
+    font-size: 5vw;
+
+}
+.headings h1{
+    padding-left: 6%;
+    cursor: pointer;
+}
+
+
+#page4-left p{
+    font-size: 4.1vw;
+    font-weight: 400;
+}
+
+#page4-right{
+    width: 100%;
+    height: 50vh;
+    margin-top: 20px;
+  
+}
+
+#page4-right img{
+    width: 100vw;
+   height: 35vh;
+    background-size: cover;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-radius: 50px;
+   
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
 }

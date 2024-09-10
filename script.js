@@ -37,7 +37,7 @@ function page4(){
         design.style.borderLeft = '3px solid #FF4500';
         project.style.borderLeft = '3px solid #504A45'
         education.style.borderLeft = '3px solid #504A45'
-        design.style.color = "#ffff"
+        design.style.color = "#ffffff"
         project.style.color = "#504A45"
         education.style.color = "#504A45"
         para.innerHTML = "Our team works with our clients to refine an idea and concept into an executable design. We create a final design that encompasses the brand narrative to bring stories to life and provide end-to-end design solutions from concept, design, and architectural drawings to 3D renderings."
@@ -79,25 +79,14 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
-
-  var navanimation = document.querySelector(".btn-right")
-
-  var fullscr = document.querySelector("#full-scr")
-var navImg = document.querySelector(" nav img")
-console.log(navImg);
-var flag = 0
-  navanimation.addEventListener("click", function(){
-    if(flag == 0){
-        fullscr.style.top = 0
-
-        navImg.style.opacity = 0
-        flag = 1
-    }
-    else{
-        fullscr.style.top = "-100%"
-        navImg.style.opacity = 1
-        flag = 0
-    }
-  
-  })
+  var scr = document.querySelector("#full-scr")
+  console.log(scr);
+const nav = document.querySelector("nav")
+  var navbtn = document.querySelector("nav h3")
+console.log(navbtn);
+//   navbtn.addEventListener("click", function(){
+//     scr.style.top = 0
+//     nav.style.zIndex = 100
+//     nav.style.position = "relative"
+//   })
 page4()
